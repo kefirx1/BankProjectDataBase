@@ -22,6 +22,7 @@ def accountNumberC():
     IBANTemp6 = 98-IBANTemp5
     checkSum = str(IBANTemp6)
     IBAN=countryCode+checkSum+bankNumberFull+customerInvoice
+    print(IBAN)
     return IBAN
     
 accountNumberC()
