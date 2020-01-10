@@ -22,7 +22,6 @@ def menu(number):
         #checking balance
         cursor.execute("SELECT balance FROM data WHERE number={}".format(number))
         accountBalanceB = cursor.fetchall()
-        print(accountBalanceB)
         for ch in accountBalanceB:
             for v in ch:
                 accountBalance=v
